@@ -49,6 +49,7 @@ class LSTMpred(nn.Module):
         
         x=x.view(self.time_step, self.batch_size,-1)
 
+
         h1 = Variable(torch.zeros(1, 1, self.hidden_size))
         c1 = Variable(torch.zeros(1, 1, self.hidden_size))
         
